@@ -28,7 +28,7 @@ function Regles() {
         </div>
 
         <div className="regle-item">
-          <div className="regle-icon">🎁</div>
+          <div className="regle-icon">4</div>
           <div className="regle-text">
             <h3>Les lots à gagner</h3>
             <ul className="lots-list">
@@ -40,7 +40,7 @@ function Regles() {
         </div>
 
         <div className="regle-item">
-          <div className="regle-icon">📢</div>
+          <div className="regle-icon">5</div>
           <div className="regle-text">
             <h3>Annonce des résultats</h3>
             <p>Les résultats seront annoncés après la fin du concours. Les gagnants seront contactés directement</p>
