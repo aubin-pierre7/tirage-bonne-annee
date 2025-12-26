@@ -77,7 +77,7 @@ function FormInscription({ concoursTermine, placesRestantes, onInscriptionReussi
     <div className="form-container">
       <form onSubmit={handleSubmit} className="inscription-form">
         <div className="form-group">
-          <label htmlFor="prenom">Pseudo *</label>
+          <label htmlFor="prenom">Pseudo </label>
           <input
             type="text"
             id="prenom"
@@ -90,7 +90,7 @@ function FormInscription({ concoursTermine, placesRestantes, onInscriptionReussi
         </div>
 
         <div className="form-group">
-          <label htmlFor="telephone">Numéro de téléphone *</label>
+          <label htmlFor="telephone">Numéro de téléphone </label>
           <input
             type="tel"
             id="telephone"
@@ -103,7 +103,7 @@ function FormInscription({ concoursTermine, placesRestantes, onInscriptionReussi
         </div>
 
         <div className="form-group">
-          <label htmlFor="operateur">Opérateur *</label>
+          <label htmlFor="operateur">Opérateur </label>
           <select
             id="operateur"
             value={operateur}
