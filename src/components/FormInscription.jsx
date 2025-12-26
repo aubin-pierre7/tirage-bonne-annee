@@ -18,7 +18,7 @@ function FormInscription({ concoursTermine, placesRestantes, onInscriptionReussi
     setMessage({ type: '', text: '' });
 
     if (!prenom.trim()) {
-      setMessage({ type: 'error', text: 'Le prénom est obligatoire' });
+      setMessage({ type: 'error', text: 'Le pseudo est obligatoire' });
       return;
     }
 
@@ -77,13 +77,13 @@ function FormInscription({ concoursTermine, placesRestantes, onInscriptionReussi
     <div className="form-container">
       <form onSubmit={handleSubmit} className="inscription-form">
         <div className="form-group">
-          <label htmlFor="prenom">Prénom *</label>
+          <label htmlFor="prenom">Pseudo *</label>
           <input
             type="text"
             id="prenom"
             value={prenom}
             onChange={(e) => setPrenom(e.target.value)}
-            placeholder="Votre prénom"
+            placeholder="Votre pseudo"
             disabled={isDisabled}
             required
           />
