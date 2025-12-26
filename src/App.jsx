@@ -59,7 +59,7 @@ function App() {
       <section className="section-creator">
         <div className="creator-info">
           <img
-            src="/images/aubin.jpg"  // mettre l'image dans public/images/
+            src="/images/Moi.jpg"  // mettre l'image dans public/images/
             alt="Aubin"
             className="creator-photo"
           />
