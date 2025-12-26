@@ -44,6 +44,7 @@ function App() {
 
   return (
     <div className="app">
+      {/* Hero */}
       <header className="hero">
         <div className="hero-content">
           <h1 className="hero-title">Tirage au sort – Bonne Année 2025 🎉</h1>
@@ -53,6 +54,18 @@ function App() {
           </p>
         </div>
       </header>
+
+      {/* Section Créateur */}
+      <section className="section-creator">
+        <div className="creator-info">
+          <img
+            src="assets/Moi.jpg"  // mettre l'image dans public/images/
+            alt="Aubin"
+            className="creator-photo"
+          />
+          <p className="creator-name">Concours d'Axel Choco</p>
+        </div>
+      </section>
 
       <main className="main-content">
         <section className="section-countdown">
