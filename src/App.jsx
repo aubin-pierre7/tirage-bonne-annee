@@ -3,6 +3,7 @@ import FormInscription from './components/FormInscription';
 import Countdown from './components/Countdown';
 import Compteur from './components/Compteur';
 import Regles from './components/Regles';
+import Resultats from './components/Resultats';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -68,6 +69,7 @@ function App() {
       </section>
 
       <main className="main-content">
+        {/* Countdown */}
         <section className="section-countdown">
           <Countdown
             dateFin={DATE_FIN_CONCOURS}
@@ -75,6 +77,7 @@ function App() {
           />
         </section>
 
+        {/* Compteur */}
         <section className="section-compteur">
           {loading ? (
             <div className="loading">Chargement...</div>
@@ -86,6 +89,7 @@ function App() {
           )}
         </section>
 
+        {/* Formulaire d'inscription */}
         <section className="section-formulaire">
           <h2>Inscrivez-vous maintenant</h2>
           <FormInscription
@@ -95,11 +99,24 @@ function App() {
           />
         </section>
 
+        {/* Règles */}
         <section className="section-regles">
           <Regles />
         </section>
+
+        {/* Résultats */}
+        {concoursTermine && (
+          <Resultats
+            gagnants={[
+              { prenom: 'Aubin', lot: 25000, photo: '/images/Moi.jpg' },
+              { prenom: 'Marie', lot: 10000, photo: '/images/marie.jpg' },
+              { prenom: 'Paul', lot: 5000, photo: '/images/paul.jpg' }
+            ]}
+          />
+        )}
       </main>
 
+      {/* Footer */}
       <Footer />
     </div>
   );
