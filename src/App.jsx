@@ -49,7 +49,7 @@ function App() {
         <div className="hero-content">
           <h1 className="hero-title">Tirage au sort – Bonne Année 2025 🎉</h1>
           <p className="hero-subtitle">
-            Participez à notre grand tirage au sort de fin d'année et tentez de gagner jusqu'à 25 000 FCFA !
+            Participez à mon grand tirage au sort de fin d'année et tentez de gagner jusqu'à 25 000 FCFA !
             Inscription gratuite et rapide.
           </p>
         </div>
